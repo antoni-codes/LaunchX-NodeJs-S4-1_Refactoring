@@ -1,0 +1,6 @@
+# Ignore Git
+.git
+
+# Ignore Node Modules
+node_modules
+**/node_modules
