@@ -1,0 +1,20 @@
+{
+  "name": "launchx-nodejs-s4-1_refactoring",
+  "version": "1.0.0",
+  "description": "## ⌨ Descripción Refactotización de scripts legados",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring/issues"
+  },
+  "homepage": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring#readme"
+}
