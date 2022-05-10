@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring/issues"
   },
-  "homepage": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring#readme"
+  "homepage": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring#readme",
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
