@@ -6,8 +6,8 @@ const explorers = JSON.parse(rawdata);
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-// console.log(explorersInNode.length)
- 
+console.log(explorersInNode.length)
+
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
@@ -20,11 +20,11 @@ const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer
 // Score: 4, Trick: 4.
 // Score: 5, Trick: 5.
 
-const assignFizzTrick = function(explorer){
-    if(explorer.score%3 === 0){
+const assignFizzTrick = function (explorer) {
+    if (explorer.score % 3 === 0) {
         explorer.trick = "FIZZ";
         return explorer;
-    }else{
+    } else {
         explorer.trick = explorer.score;
         return explorer;
     }
@@ -35,11 +35,11 @@ const explorersInNodeAndFizzTrick = explorersInNode.map((explorer) => assignFizz
 
 // Part 6: Get a new list of explorers in node if the score number is divisible by 5, we need to set a new property called trick and set the value BUZZ, if not this value should be just the score
 //
-const assignBuzzTrick = function(explorer){
-    if(explorer.score%5 === 0){
+const assignBuzzTrick = function (explorer) {
+    if (explorer.score % 5 === 0) {
         explorer.trick = "BUZZ";
         return explorer;
-    }else{
+    } else {
         explorer.trick = explorer.score;
         return explorer;
     }
@@ -49,11 +49,11 @@ const explorersInNodeAndBuzzTrick = explorersInNode.map((explorer) => assignBuzz
 // console.log(explorersInNodeAndBuzzTrick);
 //Part7: Get a new list of explorers in Node, if the score number is divisible by 3 AND by 5 we need to set a new property called FIZZBUZZ, if not this value should be the same score value
 
-const assignFizzBuzzTrick = function(explorer){
-    if(explorer.score%5 === 0 && explorer.score%3 === 0){
+const assignFizzBuzzTrick = function (explorer) {
+    if (explorer.score % 5 === 0 && explorer.score % 3 === 0) {
         explorer.trick = "FIZZBUZZ";
         return explorer;
-    }else{
+    } else {
         explorer.trick = explorer.score;
         return explorer;
     }
