@@ -1,19 +1,12 @@
-const fs = require("fs");
+// Clase anterior con la que obtenemos los explorers
+const Reader = require("./lib/utils/Reader");
+const explorers = Reader.readJsonFile("explorers.json");
+const mission = "node";
 
-// Part 1 Read json file ===========================
-const rawdata = fs.readFileSync("explorers.json");
-const explorers = JSON.parse(rawdata);
-
-// Part 2: Get the quantity of explorers names in node
-const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-console.log(explorersInNode.length)
-
-// Part4: Get the explorer's usernames in Node
-const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
-const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-// console.log(usernamesInNode)
-
-// DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
+// Aplicación del ExplorerService sobre la lista de explorers
+ExplorerService.filterByMission(explorers, mission);
+ExplorerService.getAmountOfExplorersByMission(explorers, mission);
+ExplorerService.getExplorersUsernamesByMission(explorers, mission);
 
 // Part 5: Get a new list of explorers in node, if the score numbers is divisible by 3, I need a new propery called trick, and the value assigned is FIZZ, if not the value should be the score itself.
 // Score: 3, Trick: FIZZ.
