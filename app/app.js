@@ -7,7 +7,7 @@ const explorers = Reader.readJsonFile("explorers.json");
 // Const de misión
 const mission = "node";
 
-// Aplicación del ExplorerService sobre la lista de explorers
+/*-- STATIC METHODS --*/
 ExplorerService.filterByMission(explorers, mission);
 
 ExplorerService.getAmountOfExplorersByMission(explorers, mission);
