@@ -19,7 +19,7 @@
   "homepage": "https://github.com/antoni-codes/LaunchX-NodeJs-S4-1_Refactoring#readme",
   "keywords": [],
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^26.0.0"
   },
   "dependencies": {
     "express": "^4.18.1"
