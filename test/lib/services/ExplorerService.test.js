@@ -1,7 +1,7 @@
 const ExplorerService = require('./../../../lib/services/ExplorerService')
 const ExplorersJson = require('./../../../explorers.json')
 
-describe("Pruebas de ExplorerService", () => {
+describe("Pruebas de clase ExplorerService", () => {
     test("1. Test de filtrado por misión", () => {
         const explorer = ExplorersJson
         const mission = "node"
