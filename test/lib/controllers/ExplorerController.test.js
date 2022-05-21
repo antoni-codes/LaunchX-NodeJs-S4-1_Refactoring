@@ -22,4 +22,10 @@ describe('Testing para Explorer Controllers', () => {
         // console.log(explorerByUsername);
         expect(explorerByUsername.length).toBe(10)
     })
+
+    test('4. Test para obtener cantidad de explorers por la misión filtrada', () => {
+        const explorerTotal = ExplorerController.getExplorersAmountByMission('node')
+        console.log(explorerTotal);
+        expect(explorerTotal.length).toBe(10)
+    })
 })
