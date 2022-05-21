@@ -13,7 +13,13 @@ describe('Testing para Explorer Controllers', () => {
 
     test('2. Test para obtener lista de Explorers por misión', () => {
         const explorerByMission = ExplorerController.getExplorersByMission('node')
-        console.log(explorerByMission);
+        // console.log(explorerByMission);
         expect(explorerByMission.length).toBe(10)
+    })
+
+    test('3. Test para obtener usernames por lista filtrada', () => {
+        const explorerByUsername = ExplorerController.getExplorersUsernamesByMission('node')
+        // console.log(explorerByUsername);
+        expect(explorerByUsername.length).toBe(10)
     })
 })
