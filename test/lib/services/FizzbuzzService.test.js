@@ -24,4 +24,11 @@ describe("Tests para validar Fizzbuzz", () => {
         const test4 = FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
         expect(test4.trick).toBe("FIZZBUZZ");
     });
+
+    test(".5 Test para validar FIZZBUZZ por nuevo requerimineto", () => {
+        const explorer = {name: 'Explorer', score: 15}
+        const test5 = FizzbuzzService.applyValidationInNumber(explorer)
+
+        expect(test5.trick).toBe("Fizzbuzz")
+    })
 });
