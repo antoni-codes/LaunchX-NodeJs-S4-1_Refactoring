@@ -28,7 +28,7 @@ describe("Testing para Explorer Controllers", () => {
     });
 
     test("5. Test para validar Fizzbuzz nuevo requerimento", () => {
-        const explorer = {score: 1}
+        const explorer = {score: 15}
         const fizzbuzzResult = ExplorerController.getExplorerFizzbuzz(explorer)
         expect(fizzbuzzResult.trick).toBe("Fizzbuzz")
     })
