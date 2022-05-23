@@ -25,10 +25,11 @@ describe("Tests para validar Fizzbuzz", () => {
         expect(test4.trick).toBe("FIZZBUZZ");
     });
 
-    test(".5 Test para validar FIZZBUZZ por nuevo requerimineto", () => {
+    test("5. Test para validar FIZZBUZZ por nuevo requerimiento", () => {
         const explorer = {name: 'Explorer', score: 15}
         const test5 = FizzbuzzService.applyValidationInNumber(explorer)
 
         expect(test5.trick).toBe("Fizzbuzz")
     })
+
 });
